@@ -1,6 +1,6 @@
 # EPLAN EEC Pro Documentation RAG — Cloudflare MCP Server
 
-*Part of [eplan-cloudflare-rags](../README.md). The local action server lives in [eplan-rag-mcp](https://github.com/covagashi/eplan-rag-mcp).*
+*Part of [eplan-cloudflare-rags](../README.md). The local action server lives in [eplan-mcp](https://github.com/Canary-ECAD/eplan-mcp).*
 
 Remote MCP server that lets Claude search the **EPLAN EEC Pro 2026** documentation through semantic vector search.
 
@@ -140,7 +140,7 @@ cloudflare-rag-eecpro/
 | Product | Eplan Electric P8 | Eplan EEC Pro |
 | Source DB | `eplan-p8-mcp-server/chroma_db_sota/` (~870 MB, 57K vectors) | `eplan-eecpro-rag-builder/rag_db_llama_chroma/` (~102 MB, ~6.7K vectors) |
 | Vectorize index | `eplan-knowledge-base` | `eecpro-knowledge-base` |
-| Worker name | `eplan-rag-mcp` | `eecpro-rag-mcp` |
+| Worker name | `eplan-mcp` | `eecpro-rag-mcp` |
 | Domain | `rag2026.covaga.xyz` | `rageecpro.covaga.xyz` |
 | MCP name | `eplan-rag` | `eecpro-rag` |
 | Tools | `eplan_search` / `eplan_stats` | `eecpro_search` / `eecpro_stats` |

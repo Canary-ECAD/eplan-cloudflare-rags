@@ -6,7 +6,7 @@ on:
 jobs:
   deploy:
     # Run only in the source repository after configuring its Cloudflare secrets.
-    if: github.repository == 'covagashi/eplan-cloudflare-rags'
+    if: github.repository == 'Canary-ECAD/eplan-cloudflare-rags'
     runs-on: ubuntu-latest
     defaults:
       run:

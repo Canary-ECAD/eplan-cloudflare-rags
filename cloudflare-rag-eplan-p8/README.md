@@ -1,6 +1,6 @@
 # EPLAN P8 Documentation RAG — Cloudflare MCP Server
 
-*Part of [eplan-cloudflare-rags](../README.md). The local action server lives in [eplan-rag-mcp](https://github.com/covagashi/eplan-rag-mcp).*
+*Part of [eplan-cloudflare-rags](../README.md). The local action server lives in [eplan-mcp](https://github.com/Canary-ECAD/eplan-mcp).*
 
 Remote MCP server that lets Claude search the **EPLAN Electric P8** documentation (API Reference, User Guide, hidden actions) through semantic vector search.
 
@@ -11,7 +11,7 @@ Deployed on Cloudflare Workers with Vectorize + Workers AI.
 ## Architecture
 
 ```
-Claude Code  -->  MCP (Streamable HTTP)  -->  Cloudflare Worker (eplan-rag-mcp)
+Claude Code  -->  MCP (Streamable HTTP)  -->  Cloudflare Worker (eplan-mcp)
                                                    |
                                               Workers AI (bge-base-en-v1.5)
                                                    |
@@ -99,8 +99,8 @@ cloudflare-rag-eplan-p8/
 ## Source Data
 
 The vectors served by this worker are produced from the ChromaDB created by the
-[local EPLAN server](https://github.com/covagashi/eplan-rag-mcp/tree/main/eplan-p8-mcp-server).
+[local EPLAN server](https://github.com/Canary-ECAD/eplan-mcp/tree/main/eplan-p8-mcp-server).
 Set `EPLAN_P8_CHROMA_DB_PATH` to that database before running
 `migration/scripts/01_verify_and_export.py`; its default expects a sibling
-`eplan-rag-mcp/eplan-p8-mcp-server/chroma_db_sota/` checkout. The export is then
+`eplan-mcp/eplan-p8-mcp-server/chroma_db_sota/` checkout. The export is then
 uploaded to Cloudflare Vectorize by `migration/scripts/02_deploy_to_cloudflare.sh`.

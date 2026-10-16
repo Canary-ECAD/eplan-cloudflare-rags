@@ -100,7 +100,7 @@ which of these differs from the audited local pipeline.
 
 ## Deployed Worker verification
 
-GitHub Actions [run 36573317600](https://github.com/covagashi/eplan-cloudflare-rags/actions/runs/36573317600)
+GitHub Actions [run 36573317600](https://github.com/Canary-ECAD/eplan-cloudflare-rags/actions/runs/36573317600)
 completed successfully for commit 388c9d5. The public health endpoint now
 reports result_contract distinct-v1. Repeating both authorized SSV queries
 against the deployed Worker confirmed review_required=true and distinct

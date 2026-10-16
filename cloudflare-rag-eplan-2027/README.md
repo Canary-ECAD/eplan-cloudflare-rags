@@ -1,6 +1,6 @@
 # EPLAN 2027 API Wiki — Cloudflare MCP Server (Keyword Search)
 
-*Part of [eplan-cloudflare-rags](../README.md). The local action server lives in [eplan-rag-mcp](https://github.com/covagashi/eplan-rag-mcp).*
+*Part of [eplan-cloudflare-rags](../README.md). The local action server lives in [eplan-mcp](https://github.com/Canary-ECAD/eplan-mcp).*
 
 Remote MCP server that lets Claude search the **EPLAN 2027 API documentation** through
 full-text/keyword search (SQLite FTS5 + bm25), over the wiki produced by

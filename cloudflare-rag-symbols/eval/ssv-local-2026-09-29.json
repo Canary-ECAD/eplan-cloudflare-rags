@@ -169,7 +169,7 @@
   },
   "conditional_index_diagnosis": "The local user-image-to-source-A cosine is 0.8541, while the public user-image top score is 0.5589 and the public source-template-to-SSV/3/A score is 0.7155. If the deployed index stored this exact normalized source embedding and reported cosine similarity, its self-query score should be approximately 1 and the user image should rank SSV/3/A above the observed 0.5589 results. The mismatch prioritizes checking deployed vector provenance, embedding/model revision, preprocessing, index metric, and metadata-to-vector mapping. Public responses alone cannot distinguish these causes.",
   "deployed_worker_verification": {
-    "workflow_run": "https://github.com/covagashi/eplan-cloudflare-rags/actions/runs/36573317600",
+    "workflow_run": "https://github.com/Canary-ECAD/eplan-cloudflare-rags/actions/runs/36573317600",
     "workflow_conclusion": "success",
     "head_commit": "388c9d5629eb6ddc63b473c139a818d080929528",
     "health_result_contract": "distinct-v1",

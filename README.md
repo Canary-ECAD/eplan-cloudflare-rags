@@ -1,6 +1,6 @@
 # EPLAN documentation RAGs on Cloudflare
 
-Source code for three public documentation search services deployed on Cloudflare Workers. They complement the local EPLAN action server in [eplan-rag-mcp](https://github.com/covagashi/eplan-rag-mcp) and the guidance in [eplan-development-skill](https://github.com/covagashi/eplan-development-skill).
+Source code for three public documentation search services deployed on Cloudflare Workers. They complement the local EPLAN action server in [eplan-mcp](https://github.com/Canary-ECAD/eplan-mcp) and the guidance in [eplan-scripting-skill](https://github.com/Canary-ECAD/eplan-scripting-skill).
 
 | Project | Documentation | Search | MCP endpoint |
 |---|---|---|---|
@@ -28,5 +28,11 @@ ChromaDB source data, Vectorize indexes and the D1 database are not stored in th
 
 ## Related repositories
 
-- [eplan-rag-mcp](https://github.com/covagashi/eplan-rag-mcp): local MCP server that controls a running EPLAN instance.
-- [eplan-development-skill](https://github.com/covagashi/eplan-development-skill): agent skills and an MCP configuration for these documentation services.
+- [eplan-mcp](https://github.com/Canary-ECAD/eplan-mcp): local MCP server that controls a running EPLAN instance.
+- [eplan-scripting-skill](https://github.com/Canary-ECAD/eplan-scripting-skill): agent skills and an MCP configuration for these documentation services.
+
+## License
+
+MIT — see [LICENSE](LICENSE).
+
+> **Disclaimer:** this is an independent community project by [Canary E-cad](https://github.com/Canary-ECAD). It is not affiliated with, endorsed by, or supported by EPLAN GmbH & Co. KG. EPLAN, EPLAN Electric P8 and EPLAN EEC Pro are trademarks of their respective owner. The MIT license covers this repository's code only; the documentation these services index belongs to its owner.
