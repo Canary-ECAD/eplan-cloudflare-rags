@@ -30,6 +30,7 @@ ChromaDB source data, Vectorize indexes and the D1 database are not stored in th
 
 - [eplan-mcp](https://github.com/Canary-ECAD/eplan-mcp): local MCP server that controls a running EPLAN instance.
 - [eplan-scripting-skill](https://github.com/Canary-ECAD/eplan-scripting-skill): agent skills and an MCP configuration for these documentation services.
+- [Bochica](https://github.com/Canary-ECAD/bochica): Windows desktop app that uses these documentation services out of the box, with eplan-mcp and the skills, behind a chat.
 
 ## License
 
