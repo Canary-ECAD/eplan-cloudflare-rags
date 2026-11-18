@@ -10,13 +10,8 @@ import time
 import numpy as np
 
 # --- Config ---
-CHROMA_DB_PATH = os.environ.get(
-    "EPLAN_P8_CHROMA_DB_PATH",
-    os.path.join(
-        os.path.dirname(__file__), "..", "..", "..", "..",
-        "eplan-rag-mcp", "eplan-p8-mcp-server", "chroma_db_sota"
-    ),
-)
+# eplan-mcp no longer ships the local ChromaDB, so there is no default path.
+CHROMA_DB_PATH = os.environ.get("EPLAN_P8_CHROMA_DB_PATH")
 COLLECTION_NAME = "eplan_docs"
 OUTPUT_DIR = os.path.dirname(__file__)
 BATCH_SIZE = 5000  # ChromaDB get() batch size
@@ -32,6 +27,9 @@ def main():
     print("STEP 1: Verify ChromaDB RAG")
     print("=" * 60)
 
+    if not CHROMA_DB_PATH:
+        print("ERROR: set EPLAN_P8_CHROMA_DB_PATH to the chroma_db_sota folder")
+        sys.exit(1)
     db_path = os.path.abspath(CHROMA_DB_PATH)
     print(f"DB path: {db_path}")
 

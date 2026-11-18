@@ -138,7 +138,7 @@ cloudflare-rag-eecpro/
 | Aspect | `cloudflare-rag-eplan-p8` (P8) | `cloudflare-rag-eecpro` (EEC Pro) |
 |--------|-------------------------------|-----------------------------------|
 | Product | Eplan Electric P8 | Eplan EEC Pro |
-| Source DB | `eplan-p8-mcp-server/chroma_db_sota/` (~870 MB, 57K vectors) | `eplan-eecpro-rag-builder/rag_db_llama_chroma/` (~102 MB, ~6.7K vectors) |
+| Source DB | `chroma_db_sota/` from the former eplan-mcp local RAG (~870 MB, 57K vectors) | `eplan-eecpro-rag-builder/rag_db_llama_chroma/` (~102 MB, ~6.7K vectors) |
 | Vectorize index | `eplan-knowledge-base` | `eecpro-knowledge-base` |
 | Worker name | `eplan-mcp` | `eecpro-rag-mcp` |
 | Domain | `rag2026.covaga.xyz` | `rageecpro.covaga.xyz` |

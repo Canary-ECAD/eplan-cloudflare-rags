@@ -82,6 +82,6 @@ Before replacing the production service:
 | [index_symbols.py](index_symbols.py) | Coverage audit, canonical identity with library, image hashes, index manifest, duplicate accounting. |
 | [worker/src/index.ts](worker/src/index.ts) | Distinct-code results, diagnostic raw IDs, version fields, and review-required status. |
 | [index-symbols workflow](../.github/workflows/index-symbols.yml) | Audit and benchmark gates, staged index build, controlled promotion. |
-| [EPLAN MCP symbol-search extension](https://github.com/Canary-ECAD/eplan-mcp/blob/main/eplan-p8-mcp-server/extensions/symbol_search.py) | Segmentation, TLS trust, distinct candidate display, and safe handling of uncertainty. This change belongs in the separate eplan-mcp repository. |
+| [EPLAN MCP symbol-search extension](https://github.com/Canary-ECAD/eplan-mcp/blob/main/python/extensions/symbol_search.py) | Segmentation, TLS trust, distinct candidate display, and safe handling of uncertainty. This change belongs in the separate eplan-mcp repository. |
 
 Implement P0 before choosing a replacement model. The measured embedding collapse explains why a present row can be ranked badly; only the coverage audit can establish whether a source or indexing fault also exists.
