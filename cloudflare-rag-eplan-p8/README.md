@@ -98,9 +98,10 @@ cloudflare-rag-eplan-p8/
 
 ## Source Data
 
-The vectors served by this worker are produced from the ChromaDB created by the
-[local EPLAN server](https://github.com/Canary-ECAD/eplan-mcp/tree/main/eplan-p8-mcp-server).
-Set `EPLAN_P8_CHROMA_DB_PATH` to that database before running
-`migration/scripts/01_verify_and_export.py`; its default expects a sibling
-`eplan-mcp/eplan-p8-mcp-server/chroma_db_sota/` checkout. The export is then
+The vectors served by this worker were produced from the `chroma_db_sota`
+ChromaDB built by the local RAG that [eplan-mcp](https://github.com/Canary-ECAD/eplan-mcp)
+used to ship. eplan-mcp no longer contains that database or its builder; the
+server now queries this worker instead. To re-export, set
+`EPLAN_P8_CHROMA_DB_PATH` to a copy of that database before running
+`migration/scripts/01_verify_and_export.py`; the script stops if it is unset. The export is then
 uploaded to Cloudflare Vectorize by `migration/scripts/02_deploy_to_cloudflare.sh`.
